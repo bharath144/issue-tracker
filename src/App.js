@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CreateIssue from "./components/CreateIssues/CreateIssues.js";
+import ListIssues from "./components/ListIssues/ListIssues.js";
+
+import "./App.css";
 
 function App() {
+  const [createIssue, setCreateIssue] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Issue Tracker</h1>
+      <div className="issue-input-container">
+        {createIssue ? <CreateIssue /> : <ListIssues />}
+      </div>
+      <div className="view-selection">
+        <button className="main-button">List Issues</button>
+        <button className="main-button active-button">Create Issue</button>
+      </div>
     </div>
   );
 }

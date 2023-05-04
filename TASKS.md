@@ -18,4 +18,12 @@ Stretch goals:
   - [x] Install `npx`
   - [x] Install `create-react-app` extension
 - [x] Create a boilerplate app using `create-react-app` extension
-- [ ] Create a GitHub repository (bharath144/issue-tracker)
+- [x] Create a GitHub repository (bharath144/issue-tracker)
+- [ ] Modify the basic app and get it ready for building the `issue-tracker` app.
+  - [x] Remove unwanted code
+  - [x] Setup ESlint
+  - [x] Create components for individual screens/views
+    - [x] Creating issues
+    - [x] Listing/viewing issues
+    - [x] View individual issue
+  - [ ]
