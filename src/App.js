@@ -5,7 +5,15 @@ import ListIssues from "./components/ListIssues/ListIssues.js";
 import "./App.css";
 
 function App() {
-  const [createIssue, setCreateIssue] = useState(false);
+  const [createIssue, setCreateIssue] = useState(true);
+
+  function switchToCreateView() {
+    setCreateIssue(true);
+  }
+
+  function switchToListView() {
+    setCreateIssue(false);
+  }
 
   return (
     <div className="App">
@@ -14,8 +22,8 @@ function App() {
         {createIssue ? <CreateIssue /> : <ListIssues />}
       </div>
       <div className="view-selection">
-        <button className="main-button">List Issues</button>
-        <button className="main-button active-button">Create Issue</button>
+        <button className="main-button" onClick={() => switchToListView()}>List Issues</button>
+        <button className="main-button active-button" onClick={() => switchToCreateView()}>Create Issue</button>
       </div>
     </div>
   );
