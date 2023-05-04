@@ -11,12 +11,11 @@ Stretch goals:
 
 # Here's what's been done thusfar
 
-- [ ] Understand the basics of React
-- [ ] Setup all the necessary tools required
-  - [ ] Install `nvm`
-  - [ ] Install `Node.js` and `npm`
-  - [ ] Install `npx`
-  - [ ] Install `create-react-app` extension
-- [ ] Create a boilerplate app using `create-react-app` extension
+- [x] Understand the basics of React
+- [x] Setup all the necessary tools required
+  - [x] Install `nvm`
+  - [x] Install `Node.js` and `npm`
+  - [x] Install `npx`
+  - [x] Install `create-react-app` extension
+- [x] Create a boilerplate app using `create-react-app` extension
 - [ ] Create a GitHub repository (bharath144/issue-tracker)
--
