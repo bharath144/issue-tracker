@@ -14,7 +14,7 @@ function CreateIssue() {
       "http://localhost:5000/records", {method: "post",body: JSON.stringify({ title, description, priority }),headers: {"Content-Type": "application/json"}}
     );
     result = await result.json();
-    console.warn(result);
+    console.info(result);
     if (result) {
       alert("Issue created succesfully!");
       setTitle("");
